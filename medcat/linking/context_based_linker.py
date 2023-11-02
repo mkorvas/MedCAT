@@ -126,6 +126,7 @@ class Linker(PipeRunner):
                             entity._.context_similarity = context_similarity
                             linked_entities.append(entity)
 
+        doc._.all_ents = list(doc._.ents)
         doc._.ents = linked_entities
         create_main_ann(self.cdb, doc)
 
