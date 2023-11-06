@@ -11,6 +11,14 @@ MedCAT can be used to extract information from Electronic Health Records (EHRs) 
 
 **Discussion Forum [discourse](https://discourse.cogstack.org/)**
 
+## Notes about this fork
+
+As required by the license, here is a summary of changes I have made to the
+code on this development branch:
+1. The `all_ents` extension property is defined for the SpaCy `Doc`s and
+   populated with the list of all entities recognized by the NER _before_
+   discarding many of them by the named entity linker.
+
 ## Available Models
 
 We have 4 public models available:
